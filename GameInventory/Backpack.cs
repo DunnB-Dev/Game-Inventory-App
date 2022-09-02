@@ -1,30 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GameInventory
+﻿namespace GameInventory
 {
     internal class Backpack
     {
 
-        private List<Item> contents;
+        private List<Item> _contents;
         public Backpack()
         {
-            contents = new List<Item>();
+            _contents = new List<Item>();
         }
 
         public void Add(Item item)
         {
-            contents.Add(item);
+            _contents.Add(item);
         }
 
         public string ListWeapons()
         {
             string weapons = String.Empty;
             weapons += "\nWeapons--------------------------------------------------\n";
-            foreach(Item i in contents)
+            foreach(Item i in _contents)
             {
                 if(i is Weapon)
                 {
@@ -39,7 +33,7 @@ namespace GameInventory
         {
             string clues = String.Empty;
             clues += "\nClues----------------------------------------------------\n";
-            foreach(Item i in contents)
+            foreach(Item i in _contents)
             {
                 if(i is Clue)
                 {
@@ -54,7 +48,7 @@ namespace GameInventory
         {
             string consumables = String.Empty;
             consumables += "\nConsumables----------------------------------------------\n";
-            foreach(Item i in contents)
+            foreach(Item i in _contents)
             {
                 if(i is Consumable)
                 {

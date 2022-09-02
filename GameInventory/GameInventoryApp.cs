@@ -9,7 +9,7 @@
 
 namespace GameInventory
 {
-    internal class GameInventoryApp
+    internal static class GameInventoryApp
     {
         static void Main(string[] args)
         {

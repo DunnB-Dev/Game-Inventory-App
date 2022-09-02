@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GameInventory
+﻿namespace GameInventory
 {
     public enum DamageType
     {
-        SLASHING,
-        PIERCING,
-        BLUDGEONING
+        Slashing,
+        Piercing,
+        Bludgeoning
     };
 }
